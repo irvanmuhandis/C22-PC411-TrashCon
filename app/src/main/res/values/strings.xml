@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Cpstone</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="upload">Upload</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera_x">Camera X</string>
+
+    <string-array name="data_name">
+        <item>Plastik</item>
+        <item>Kardus</item>
+        <item>Kaca</item>
+        <item>Kaleng</item>
+        <item>Kertas</item>
+    </string-array>
+
+    <string-array name="data_desc">
+        <item>Sampah plastik adalah semua barang bekas atau tidak terpakai yang materialnya diproduksi dari bahan kimia tak terbarukan. Sebagian besar sampah plastik yang digunakan sehari-hari biasanya dipakai untuk pengemasan. </item>
+        <item>Kardus adalah suatu barang yang biasa digunakan sebagai pelindung atau bahan untuk melindungi produk yang dibiasa mengemas suatu barang selama distribusi dari produsen hingga sampai pada konsumen. Kardus terbuat dari bahan dasar yaitu kertas yang mudah sekali rusak.</item>
+        <item>Sampah atau limbah kaca tergolong sampah yang berbahaya bila dibuang di sembarang tempat, karena dikhawatirkan terinjak atau melukai anggota tubuh lainnya. Sampah kaca juga sangat sulit terurai di dalam tanah, dan diperlukan waktu ratusan tahun untuk dapat terurai.</item>
+        <item>Sampah kaleng adalah sampah yang terbuat dari baja tersalut timah. Sampah ini tidak bisa terurai secara alami karena bahan pembuatnya sendiri memang sulit diurai alami. </item>
+        <item>Belum tau</item>
+    </string-array>
+
+    <string-array name="data_process">
+        <item>Sampah plastik adalah semua barang bekas atau tidak terpakai yang materialnya diproduksi dari bahan kimia tak terbarukan. Sebagian besar sampah plastik yang digunakan sehari-hari biasanya dipakai untuk pengemasan. </item>
+        <item>Kardus adalah suatu barang yang biasa digunakan sebagai pelindung atau bahan untuk melindungi produk yang dibiasa mengemas suatu barang selama distribusi dari produsen hingga sampai pada konsumen. Kardus terbuat dari bahan dasar yaitu kertas yang mudah sekali rusak.</item>
+        <item>Sampah atau limbah kaca tergolong sampah yang berbahaya bila dibuang di sembarang tempat, karena dikhawatirkan terinjak atau melukai anggota tubuh lainnya. Sampah kaca juga sangat sulit terurai di dalam tanah, dan diperlukan waktu ratusan tahun untuk dapat terurai.</item>
+        <item>Sampah kaleng adalah sampah yang terbuat dari baja tersalut timah. Sampah ini tidak bisa terurai secara alami karena bahan pembuatnya sendiri memang sulit diurai alami. </item>
+        <item>Belum tau</item>
+    </string-array>
+
+
+    <integer-array name="data_photo">
+        <item>@mipmap/ic_plastik</item>
+        <item>@mipmap/ic_kardus</item>
+        <item>@mipmap/ic_kaca</item>
+        <item>@mipmap/ic_metal</item>
+        <item>@mipmap/ic_plastik</item>
+    </integer-array>
+</resources>
