@@ -10,7 +10,7 @@ import com.example.cpstone.R
 import com.example.cpstone.data.TrashClass
 
 class TrashAdapter(val listtrashes: ArrayList<Any>) :
-    RecyclerView.Adapter<TrashAdapter.ViewHolder>() {
+    RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     companion object {
         private const val ITEM_HEADER = 0
@@ -25,7 +25,7 @@ class TrashAdapter(val listtrashes: ArrayList<Any>) :
         }
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewsHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val img: ImageView = itemView.findViewById(R.id.iv_trashClass)
         val name: TextView = itemView.findViewById(R.id.tv_nameTrashClass)
 
@@ -45,25 +45,25 @@ class TrashAdapter(val listtrashes: ArrayList<Any>) :
     }
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 //        val view: View =
 //            LayoutInflater.from(parent.context).inflate(R.layout.item_column, parent, false)
 //        return ViewHolder(view)
         return when (viewType) {
             ITEM_HEADER -> HeaderHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_row,parent,false))
-            ITEM_MENU -> ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_column,parent,false))
+            ITEM_MENU -> ViewsHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_column,parent,false))
             else -> throw throw IllegalArgumentException("Undefined view type")
         }
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         when(holder.itemViewType){
             ITEM_HEADER -> {
                 val headerHolder = holder as HeaderHolder
                 headerHolder.bindContent(listtrashes[position] as String)
             }
             ITEM_MENU -> {
-                val itemHolder = holder as ViewHolder
+                val itemHolder = holder as ViewsHolder
                 itemHolder.bindContent(listtrashes[position] as TrashClass)
             }
             else -> throw IllegalArgumentException("Undefined view type")
