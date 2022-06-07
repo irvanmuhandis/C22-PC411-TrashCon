@@ -1,5 +1,6 @@
 package com.example.cpstone.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -36,11 +37,6 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-//        val textView: TextView = binding.ivTutor
-//        homeViewModel.text.observe(viewLifecycleOwner) {
-//            textView.text = it
-//        }
-
         return root
     }
 
@@ -55,7 +51,7 @@ class HomeFragment : Fragment() {
                 list.add(TrashClass(name[i], photo.getResourceId(i, -1), desc[i], process[i]))
             }
             data = list.toList()
-            return TrashAdapter { onOneColumnItemClicked(it) }.apply {
+            return TrashAdapter { trashClassClicked(it) }.apply {
                 updateData(data)
             }
         }
@@ -64,7 +60,7 @@ class HomeFragment : Fragment() {
     private val headerAdapter: HeaderAdapter
         get() {
             val data = listOf(resources.getStringArray(R.array.header_text)[0])
-            return HeaderAdapter { onTwoColumnItemClicked(it) }.apply {
+            return HeaderAdapter { headerClicked(it) }.apply {
                 updateData(data)
             }
         }
@@ -92,18 +88,22 @@ class HomeFragment : Fragment() {
         binding.rvClassTrash.adapter = concatAdapter
     }
 
-    private fun onOneColumnItemClicked(name: String) {
+    private fun trashClassClicked(name: String) {
         Toast.makeText(
             requireContext(),
             "$name from one column adapter was clicked",
             Toast.LENGTH_SHORT
         ).show()
+        val intent = Intent(requireContext(),DetailClassTrashActivity::class.java)
+        startActivity(intent)
     }
 
 
-    private fun onTwoColumnItemClicked(name: String) {
+    private fun headerClicked(name: String) {
         Toast.makeText(requireContext(), "$name from two column was clicked", Toast.LENGTH_SHORT)
             .show()
+        val intent = Intent(requireContext(),HeaderTrashActivity::class.java)
+        startActivity(intent)
     }
 
 
