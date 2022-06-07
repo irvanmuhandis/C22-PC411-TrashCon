@@ -6,6 +6,8 @@
     <string name="upload">Upload</string>
     <string name="gallery">Gallery</string>
     <string name="camera_x">Camera X</string>
+    <string name="prediksi">Prediksi</string>
+    <string name="hasil_gambar">hasil gambar</string>
 
     <string-array name="data_name">
         <item>Plastik</item>

@@ -178,21 +178,21 @@ class DashboardFragment : Fragment() {
         if (getFile != null) {
             val file = reduceFileImage(getFile as File)
             val bitmap: Bitmap = BitmapFactory.decodeFile(file.path)
-            val image = Bitmap.createScaledBitmap(bitmap, 150, 150, false)
+            val image = Bitmap.createScaledBitmap(bitmap, 160, 160, false)
             val model = Model.newInstance(requireContext())
 
 // Creates inputs for reference.
             val inputFeature0 =
-                TensorBuffer.createFixedSize(intArrayOf(1, 150, 150, 3), DataType.FLOAT32)
-            val byteBuffer: ByteBuffer = ByteBuffer.allocateDirect(4 * 150 * 150 * 3)
+                TensorBuffer.createFixedSize(intArrayOf(1, 160, 160, 3), DataType.FLOAT32)
+            val byteBuffer: ByteBuffer = ByteBuffer.allocateDirect(4 * 160 * 160 * 3)
             byteBuffer.order(ByteOrder.nativeOrder())
 
-            var intValue = IntArray(150*150)
+            var intValue = IntArray(160*160)
             image.getPixels(intValue, 0, image.width, 0, 0, image.width, image.height)
             var pixel = 0
 
-            for (i in 1..150) {
-                for (j in 1..150) {
+            for (i in 1..160) {
+                for (j in 1..160) {
                     val value = intValue[pixel++]
                     byteBuffer.putFloat(((value shr 16) and 0xFF) * (1f / 1))
                     byteBuffer.putFloat(((value shr 8) and 0xFF) * (1f / 1))
