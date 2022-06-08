@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cpstone">
         <activity
+            android:name=".ui.dashboard.ResultActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.home.HeaderTrashActivity"
             android:exported="false" />
         <activity

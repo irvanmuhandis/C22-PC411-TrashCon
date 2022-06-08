@@ -14,13 +14,14 @@ import com.example.cpstone.data.TrashClass
 import com.example.cpstone.databinding.ItemColumnBinding
 
 class TrashAdapter(
-    private val onClick: (String) -> Unit
+    private val onClick: (TrashClass) -> Unit
 ) : RecyclerView.Adapter<TrashViewHolder>() {
     private var data: List<TrashClass> = emptyList()
 
     companion object {
         const val VIEW_TYPE = 1111
     }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TrashViewHolder {
         return TrashViewHolder(
@@ -42,14 +43,16 @@ class TrashAdapter(
         this.data = data
         notifyDataSetChanged()
     }
+
+
 }
 
 class TrashViewHolder(
     private val binding: ItemColumnBinding
 ) : RecyclerView.ViewHolder(binding.root) {
-    fun bind(data: TrashClass, onClick: (String) -> Unit) {
+    fun bind(data: TrashClass, onClick: (TrashClass) -> Unit) {
         binding.tvNameTrashClass.text = data.name
         binding.ivTrashClass.setImageResource(data.photo)
-        binding.root.setOnClickListener { onClick(data.name) }
+        binding.root.setOnClickListener { onClick(data) }
     }
 }

@@ -1,7 +1,9 @@
 package com.example.cpstone.ui.home
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.cpstone.data.TrashClass
 import com.example.cpstone.databinding.ActivityDetailClassTrashBinding
 
 class DetailClassTrashActivity : AppCompatActivity() {
@@ -14,6 +16,18 @@ class DetailClassTrashActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
-        binding.textView2.text = "asadad"
+
+        val item = intent.getParcelableExtra<TrashClass>("item")
+        Toast.makeText(this,item?.name,Toast.LENGTH_SHORT).show()
+
+
+        binding.classTrash.text = item?.name
+        binding.description.text = item?.description
+        binding.process.text = item?.process
+        binding.ivTrashClassDetail.setImageResource(item!!.photo)
     }
+
+
+
+
 }

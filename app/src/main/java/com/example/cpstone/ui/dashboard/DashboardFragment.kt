@@ -18,6 +18,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.cpstone.R
 import com.example.cpstone.databinding.FragmentDashboardBinding
 import com.example.cpstone.helper.reduceFileImage
 import com.example.cpstone.helper.rotateBitmap
@@ -187,7 +188,7 @@ class DashboardFragment : Fragment() {
             val byteBuffer: ByteBuffer = ByteBuffer.allocateDirect(4 * 160 * 160 * 3)
             byteBuffer.order(ByteOrder.nativeOrder())
 
-            var intValue = IntArray(160*160)
+            var intValue = IntArray(160 * 160)
             image.getPixels(intValue, 0, image.width, 0, 0, image.width, image.height)
             var pixel = 0
 
@@ -209,16 +210,16 @@ class DashboardFragment : Fragment() {
             var confidence: FloatArray = outputFeature0.floatArray
             var maxPos = 0
             var max = 0f
-            for (i in 0..confidence.size-1) {
+            for (i in 0..confidence.size - 1) {
                 if (confidence[i] > max) {
                     max = confidence[i]
                     maxPos = i
                 }
             }
 
-            var classes = arrayOf("Cardboard","Glass","Metal","Paper","Plastic","Trash")
-            binding.prediction.text = classes[maxPos]
-
+            val intent = Intent(requireContext(), ResultActivity::class.java)
+            intent.putExtra("result",maxPos)
+            startActivity(intent)
 
 // Releases model resources if no longer used.
             model.close()

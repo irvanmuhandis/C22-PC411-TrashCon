@@ -2,6 +2,7 @@ package com.example.cpstone.ui.home
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -42,7 +43,7 @@ class HomeFragment : Fragment() {
 
     private val trashAdapter: TrashAdapter
         get() {
-            val name = resources.getStringArray(R.array.data_name)
+            val name = resources.getStringArray(R.array.result)
             val desc = resources.getStringArray(R.array.data_desc)
             val photo = resources.obtainTypedArray(R.array.data_photo)
             val process = resources.getStringArray(R.array.data_process)
@@ -51,8 +52,11 @@ class HomeFragment : Fragment() {
                 list.add(TrashClass(name[i], photo.getResourceId(i, -1), desc[i], process[i]))
             }
             data = list.toList()
+
+
             return TrashAdapter { trashClassClicked(it) }.apply {
                 updateData(data)
+
             }
         }
 
@@ -86,15 +90,18 @@ class HomeFragment : Fragment() {
         }
         binding.rvClassTrash.layoutManager = layoutManager
         binding.rvClassTrash.adapter = concatAdapter
+
+
     }
 
-    private fun trashClassClicked(name: String) {
+    private fun trashClassClicked(data: TrashClass) {
         Toast.makeText(
             requireContext(),
-            "$name from one column adapter was clicked",
+            "${data.name} from one column adapter was clicked",
             Toast.LENGTH_SHORT
         ).show()
         val intent = Intent(requireContext(),DetailClassTrashActivity::class.java)
+        intent.putExtra("item",data)
         startActivity(intent)
     }
 
@@ -112,3 +119,4 @@ class HomeFragment : Fragment() {
         _binding = null
     }
 }
+

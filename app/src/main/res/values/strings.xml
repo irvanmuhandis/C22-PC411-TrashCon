@@ -9,27 +9,30 @@
     <string name="prediksi">Prediksi</string>
     <string name="hasil_gambar">hasil gambar</string>
 
-    <string-array name="data_name">
-        <item>Plastik</item>
-        <item>Kardus</item>
-        <item>Kaca</item>
-        <item>Kaleng</item>
-        <item>Kertas</item>
+    <string-array name="result">
+        <item>Cardboard</item>
+        <item>Glass</item>
+        <item>Metal</item>
+        <item>Paper</item>
+        <item>Plastic</item>
+        <item>Trash</item>
     </string-array>
 
     <string-array name="data_desc">
-        <item>Sampah plastik adalah semua barang bekas atau tidak terpakai yang materialnya diproduksi dari bahan kimia tak terbarukan. Sebagian besar sampah plastik yang digunakan sehari-hari biasanya dipakai untuk pengemasan. </item>
         <item>Kardus adalah suatu barang yang biasa digunakan sebagai pelindung atau bahan untuk melindungi produk yang dibiasa mengemas suatu barang selama distribusi dari produsen hingga sampai pada konsumen. Kardus terbuat dari bahan dasar yaitu kertas yang mudah sekali rusak.</item>
         <item>Sampah atau limbah kaca tergolong sampah yang berbahaya bila dibuang di sembarang tempat, karena dikhawatirkan terinjak atau melukai anggota tubuh lainnya. Sampah kaca juga sangat sulit terurai di dalam tanah, dan diperlukan waktu ratusan tahun untuk dapat terurai.</item>
         <item>Sampah kaleng adalah sampah yang terbuat dari baja tersalut timah. Sampah ini tidak bisa terurai secara alami karena bahan pembuatnya sendiri memang sulit diurai alami. </item>
+        <item>Sampah kertas adalah kertas yang sudah tidak terpakai lagi dan dibuang ketika sudah tidak terpakai lagi. Kertas terbuat dari bahan dasar pohon. Sampah kertas juga terdiri dari berbagai jenis diantaranya, kertas tulis, majalah, koran, karton atau pun pembungkus makanan.</item>
+        <item>Sampah plastik adalah semua barang bekas atau tidak terpakai yang materialnya diproduksi dari bahan kimia tak terbarukan. Sebagian besar sampah plastik yang digunakan sehari-hari biasanya dipakai untuk pengemasan. </item>
         <item>Belum tau</item>
     </string-array>
 
     <string-array name="data_process">
-        <item>Sampah plastik adalah semua barang bekas atau tidak terpakai yang materialnya diproduksi dari bahan kimia tak terbarukan. Sebagian besar sampah plastik yang digunakan sehari-hari biasanya dipakai untuk pengemasan. </item>
         <item>Kardus adalah suatu barang yang biasa digunakan sebagai pelindung atau bahan untuk melindungi produk yang dibiasa mengemas suatu barang selama distribusi dari produsen hingga sampai pada konsumen. Kardus terbuat dari bahan dasar yaitu kertas yang mudah sekali rusak.</item>
         <item>Sampah atau limbah kaca tergolong sampah yang berbahaya bila dibuang di sembarang tempat, karena dikhawatirkan terinjak atau melukai anggota tubuh lainnya. Sampah kaca juga sangat sulit terurai di dalam tanah, dan diperlukan waktu ratusan tahun untuk dapat terurai.</item>
         <item>Sampah kaleng adalah sampah yang terbuat dari baja tersalut timah. Sampah ini tidak bisa terurai secara alami karena bahan pembuatnya sendiri memang sulit diurai alami. </item>
+        <item>Kebutuhan manusia yang berlebih terhadap kertas mengakibatkan bertambahnya produksi sampah kertas di lingkungan sekitar. Untuk memenuhi hal tersebut,ribuan pohon ditebang setiap tahunnya sehingga mengakibatkan rusaknya hutan. Meskipun terbuat dari bahan organik, namun masih sering ditemukan tumpukan sampah yang terdiri dari kertas. Salah satu solusi nya adalah lakukan pendauran ulang terhadap sampah kertas. Proses ini dapat mengubah sampah kertas menjadi produk kertas yang dapat digunakan kembali.</item>
+        <item>Sampah plastik adalah semua barang bekas atau tidak terpakai yang materialnya diproduksi dari bahan kimia tak terbarukan. Sebagian besar sampah plastik yang digunakan sehari-hari biasanya dipakai untuk pengemasan. </item>
         <item>Belum tau</item>
     </string-array>
 
@@ -41,11 +44,32 @@
         <item>@mipmap/ic_hpsampah_foreground</item>
     </integer-array>
 
+
     <integer-array name="data_photo">
-        <item>@mipmap/ic_plastik</item>
+
         <item>@mipmap/ic_kardus</item>
         <item>@mipmap/ic_kaca</item>
         <item>@mipmap/ic_metal</item>
+        <item>@mipmap/ic_kertas</item>
         <item>@mipmap/ic_plastik</item>
+        <item>@mipmap/ic_sampah</item>
     </integer-array>
+
+    <string-array name="tutorial_text">
+        <item>Untuk mengidentifikasi sampah cukup ambil gambar sampah itu atau pilih gambar sampah dari galeri foto anda dan Trashcon akan langsung mengidentifikasinya !</item>
+        <item>Bidikan kamera yang jelas dengan sudut dan jarak yang tepat akan membantu mengidentifikasi sampah dengan lebih akurat.</item>
+        <item>1. Fokuskan sampah pada tengah tengah frame, hindari gambar yang blur atau gelap</item>
+        <item>2. Hindari terlalu dekat dengan sampah, pastikanlah bentuk sampah jelas dan lengkap</item>
+        <item>3. Hanya masukan satu jenis sampah pada satu waktu</item>
+    </string-array>
+
+    <integer-array name="tutorial_photo">
+        <item>@mipmap/ic_ya</item>
+        <item>@mipmap/ic_blur</item>
+        <item>@mipmap/ic_zoom</item>
+        <item>@mipmap/ic_mix</item>
+
+    </integer-array>
+
+
 </resources>
