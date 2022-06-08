@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "311403621411",
+    "firebase_url": "https://c22-pc411-default-rtdb.firebaseio.com",
+    "project_id": "c22-pc411",
+    "storage_bucket": "c22-pc411.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311403621411:android:985c905ad16b4cefc4d596",
+        "android_client_info": {
+          "package_name": "com.example.cpstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311403621411-8vf4rv0fg4qt75fltf8ps4lkd4jokf5p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cpstone",
+            "certificate_hash": "9850b6bd7a443819502a3571de784fe50a8a8c36"
+          }
+        },
+        {
+          "client_id": "311403621411-3g4runrbhho4a9840flspgk2rvqlgnlm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArl-nCPdgo7zFF13oY4NBo-6oAJ_ctRw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311403621411-3g4runrbhho4a9840flspgk2rvqlgnlm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -16,20 +16,23 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.cpstone.R
 import com.example.cpstone.databinding.FragmentDashboardBinding
 import com.example.cpstone.helper.reduceFileImage
 import com.example.cpstone.helper.rotateBitmap
 import com.example.cpstone.helper.uriToFile
 import com.example.cpstone.ml.Model
 import com.example.cpstone.ui.camera.CameraActivity
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.StorageReference
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.io.File
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
+import java.util.*
 
 class DashboardFragment : Fragment() {
 
@@ -39,6 +42,9 @@ class DashboardFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
     private lateinit var dashboardViewModel: DashboardViewModel
+
+    private var firebaseStore: FirebaseStorage? = null
+    private var storageReference: StorageReference? = null
 
     companion object {
         const val TAG = "MainsActivity"
@@ -114,9 +120,29 @@ class DashboardFragment : Fragment() {
                 REQUEST_CODE_PERMISSIONS
             )
         }
+        firebaseStore = FirebaseStorage.getInstance()
+        storageReference = FirebaseStorage.getInstance().reference
+
         binding.cameraXButton.setOnClickListener { startCameraX() }
-        binding.galleryButton.setOnClickListener { startGallery() }
+        binding.galleryButton.setOnClickListener { upload() }
         binding.uploadButton.setOnClickListener { classifyImage() }
+
+    }
+
+    private fun upload() {
+        Toast.makeText(requireActivity(), getFile?.toUri().toString(), Toast.LENGTH_SHORT).show()
+        if (getFile != null) {
+            val ref = storageReference?.child("myImages/" + UUID.randomUUID().toString())
+            ref?.putFile(getFile?.toUri()!!)!!.addOnSuccessListener {
+                Toast.makeText(requireContext(), "berhasil", Toast.LENGTH_SHORT).show()
+            }.addOnFailureListener {
+
+                Toast.makeText(requireContext(), "gagal", Toast.LENGTH_SHORT).show()
+            }
+
+        } else {
+            Toast.makeText(requireContext(), "Please Upload an Image", Toast.LENGTH_SHORT).show()
+        }
 
     }
 
@@ -218,7 +244,7 @@ class DashboardFragment : Fragment() {
             }
 
             val intent = Intent(requireContext(), ResultActivity::class.java)
-            intent.putExtra("result",maxPos)
+            intent.putExtra("result", maxPos)
             startActivity(intent)
 
 // Releases model resources if no longer used.

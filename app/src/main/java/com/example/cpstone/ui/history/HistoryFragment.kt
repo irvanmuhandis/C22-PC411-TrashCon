@@ -1,4 +1,4 @@
-package com.example.cpstone.ui.blank
+package com.example.cpstone.ui.history
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,24 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.cpstone.R
 
-class BlankFragment : Fragment() {
+class HistoryFragment : Fragment() {
 
     companion object {
-        fun newInstance() = BlankFragment()
+        fun newInstance() = HistoryFragment()
     }
 
-    private lateinit var viewModel: BlankViewModel
+    private lateinit var viewModel: HistoryViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.blank_fragment, container, false)
+        return inflater.inflate(R.layout.history_fragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel = ViewModelProvider(this).get(BlankViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(HistoryViewModel::class.java)
 
 
     }

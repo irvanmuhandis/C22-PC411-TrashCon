@@ -1,10 +1,10 @@
-package com.example.cpstone.ui.blank
+package com.example.cpstone.ui.history
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class BlankViewModel : ViewModel() {
+class HistoryViewModel : ViewModel() {
     private val _text = MutableLiveData<String>().apply {
         value = "This is blankFragment"
     }
