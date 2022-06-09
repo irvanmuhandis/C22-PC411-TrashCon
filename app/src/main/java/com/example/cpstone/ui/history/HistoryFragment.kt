@@ -2,7 +2,6 @@ package com.example.cpstone.ui.history
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,10 +10,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cpstone.data.ImageUpload
 import com.example.cpstone.databinding.HistoryFragmentBinding
-import com.example.cpstone.ui.dashboard.ResultActivity
-import com.example.cpstone.ui.home.DetailClassTrashActivity
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.*
-import com.google.firebase.database.ktx.getValue
+import com.google.firebase.ktx.Firebase
 
 class HistoryFragment : Fragment() {
 
@@ -23,6 +22,7 @@ class HistoryFragment : Fragment() {
     lateinit var viewModel: HistoryViewModel
     lateinit var adapter: HistoryAdapter
     var dataRef: DatabaseReference = FirebaseDatabase.getInstance().reference.child("myImages")
+    var user: FirebaseUser = Firebase.auth.currentUser!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,7 +39,7 @@ class HistoryFragment : Fragment() {
 
         binding.rvList.layoutManager = LinearLayoutManager(requireContext())
 
-        dataRef.addValueEventListener(object : ValueEventListener {
+        dataRef.child(user.uid).addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 for (data in snapshot.children) {
                     var model = data.getValue(ImageUpload::class.java)
@@ -50,7 +50,7 @@ class HistoryFragment : Fragment() {
                 adapter.setOnhistoryClick(object : HistoryAdapter.OnHistoryClick {
                     override fun onHistoryClicked(packet: ImageUpload) {
                         val intent = Intent(requireContext(), DetailHistoryActivity::class.java)
-                        intent.putExtra("resultHistory",packet)
+                        intent.putExtra("resultHistory", packet)
                         startActivity(intent)
                     }
 
