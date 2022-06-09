@@ -23,10 +23,17 @@
             android:id="@+id/previewImageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="32dp"
             android:contentDescription="@string/hasil_gambar"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <ProgressBar
+            android:id="@+id/loadmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
     </androidx.cardview.widget.CardView>
 
     <Button
@@ -68,15 +75,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <ProgressBar
-        android:id="@+id/loadmain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/uploadButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

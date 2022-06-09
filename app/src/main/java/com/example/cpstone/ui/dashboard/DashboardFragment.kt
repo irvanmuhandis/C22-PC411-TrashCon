@@ -19,12 +19,17 @@ import androidx.core.content.ContextCompat
 import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.cpstone.R
+import com.example.cpstone.data.ImageUpload
 import com.example.cpstone.databinding.FragmentDashboardBinding
 import com.example.cpstone.helper.reduceFileImage
 import com.example.cpstone.helper.rotateBitmap
 import com.example.cpstone.helper.uriToFile
 import com.example.cpstone.ml.Model
 import com.example.cpstone.ui.camera.CameraActivity
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ServerValue
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import org.tensorflow.lite.DataType
@@ -38,13 +43,13 @@ class DashboardFragment : Fragment() {
 
     private var _binding: FragmentDashboardBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
     private lateinit var dashboardViewModel: DashboardViewModel
 
     private var firebaseStore: FirebaseStorage? = null
-    private var storageReference: StorageReference? = null
+    private var storageReference: StorageReference? = FirebaseStorage.getInstance().reference
+    private var databaseReference: DatabaseReference? =
+        FirebaseDatabase.getInstance().reference.child("myImages")
 
     companion object {
         const val TAG = "MainsActivity"
@@ -68,10 +73,7 @@ class DashboardFragment : Fragment() {
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        //   val textView: TextView = binding.textDashboard
-//        dashboardViewModel.text.observe(viewLifecycleOwner) {
-//            textView.text = it
-//        }
+
         return root
     }
 
@@ -120,24 +122,34 @@ class DashboardFragment : Fragment() {
                 REQUEST_CODE_PERMISSIONS
             )
         }
-        firebaseStore = FirebaseStorage.getInstance()
-        storageReference = FirebaseStorage.getInstance().reference
+
 
         binding.cameraXButton.setOnClickListener { startCameraX() }
-        binding.galleryButton.setOnClickListener { upload() }
+        binding.galleryButton.setOnClickListener { startGallery() }
         binding.uploadButton.setOnClickListener { classifyImage() }
 
     }
 
-    private fun upload() {
-        Toast.makeText(requireActivity(), getFile?.toUri().toString(), Toast.LENGTH_SHORT).show()
+    private fun upload(result: String,index : Int) {
         if (getFile != null) {
+            val file = reduceFileImage(getFile as File)
             val ref = storageReference?.child("myImages/" + UUID.randomUUID().toString())
-            ref?.putFile(getFile?.toUri()!!)!!.addOnSuccessListener {
-                Toast.makeText(requireContext(), "berhasil", Toast.LENGTH_SHORT).show()
-            }.addOnFailureListener {
 
-                Toast.makeText(requireContext(), "gagal", Toast.LENGTH_SHORT).show()
+            ref?.putFile(file?.toUri()!!)!!.addOnSuccessListener {
+                ref.downloadUrl.addOnSuccessListener {
+                    val id = databaseReference!!.push()!!.key
+                    val imageModel = ImageUpload(it.toString(),index ,System.currentTimeMillis(), result)
+
+                    databaseReference?.child(id!!)?.setValue(imageModel)
+                    loading(false)
+                }.addOnFailureListener {
+                    Toast.makeText(requireContext(),"GAGAAAAL",Toast.LENGTH_SHORT).show()
+                }
+
+            }.addOnProgressListener {
+                loading(true)
+            }.addOnFailureListener {
+                loading(false)
             }
 
         } else {
@@ -202,6 +214,7 @@ class DashboardFragment : Fragment() {
     }
 
     private fun classifyImage() {
+        loading(true)
         if (getFile != null) {
             val file = reduceFileImage(getFile as File)
             val bitmap: Bitmap = BitmapFactory.decodeFile(file.path)
@@ -242,9 +255,13 @@ class DashboardFragment : Fragment() {
                     maxPos = i
                 }
             }
+            var resultPrediction = resources.getStringArray(R.array.result)
+
+            upload(resultPrediction[maxPos],maxPos)
 
             val intent = Intent(requireContext(), ResultActivity::class.java)
             intent.putExtra("result", maxPos)
+            intent.putExtra("photo",file.toUri().toString())
             startActivity(intent)
 
 // Releases model resources if no longer used.

@@ -31,7 +31,7 @@
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
             <TextView
-                android:id="@+id/tv_nameTrashClass"
+                android:id="@+id/tv_NameTrashClass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"

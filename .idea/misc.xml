@@ -10,15 +10,18 @@
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout-w936dp/activity_login.xml" value="0.264" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_camera.xml" value="0.11302083333333333" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_detail_class_trash.xml" value="0.23854166666666668" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_detail_history.xml" value="0.21822916666666667" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_header_trash.xml" value="0.22447916666666667" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_login.xml" value="0.1160081053698075" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_result.xml" value="0.25416666666666665" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_result.xml" value="0.1" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/blank_fragment.xml" value="0.264" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/fragment_notifications.xml" value="0.11302083333333333" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/history_fragment.xml" value="0.109375" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/item_column.xml" value="0.264" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/item_history.xml" value="0.264" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/item_row.xml" value="0.4" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/menu/bottom_nav_menu.xml" value="0.11302083333333333" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_blur.xml" value="0.1205" />

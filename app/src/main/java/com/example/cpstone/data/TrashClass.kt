@@ -2,6 +2,7 @@ package com.example.cpstone.data
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
+import java.sql.Timestamp
 import java.util.*
 
 @Parcelize
@@ -16,10 +17,10 @@ data class HeaderTutor(
     var text :String,
     var photo : Int
 )
-
+@Parcelize
 data class ImageUpload(
-    var photo: Int,
-    var date: Date,
-    var name: String,
-    var result : String
-)
+    var photo: String ?= "",
+    var indexClass: Int ?= 0,
+    var timestamp: Long?=0,
+    var result: String? = ""
+):Parcelable

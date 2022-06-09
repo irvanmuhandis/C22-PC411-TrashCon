@@ -18,7 +18,6 @@ class DetailClassTrashActivity : AppCompatActivity() {
 
 
         val item = intent.getParcelableExtra<TrashClass>("item")
-        Toast.makeText(this,item?.name,Toast.LENGTH_SHORT).show()
 
 
         binding.classTrash.text = item?.name
