@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/drawable/circle.xml" value="0.1605" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/drawable/gradient.xml" value="0.2105" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/drawable/ic_baseline_person_4_24.xml" value="0.2105" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2105" />
@@ -10,15 +11,18 @@
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout-w936dp/activity_login.xml" value="0.264" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_camera.xml" value="0.11302083333333333" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_detail_class_trash.xml" value="0.23854166666666668" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_detail_history.xml" value="0.21822916666666667" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_header_trash.xml" value="0.22447916666666667" />
-        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_login.xml" value="0.1160081053698075" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_result.xml" value="0.25416666666666665" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_result.xml" value="0.264" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/blank_fragment.xml" value="0.264" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/fragment_notifications.xml" value="0.11302083333333333" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/history_fragment.xml" value="0.109375" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/item_column.xml" value="0.264" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/item_history.xml" value="0.264" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/item_row.xml" value="0.4" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/menu/bottom_nav_menu.xml" value="0.11302083333333333" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_blur.xml" value="0.1205" />
@@ -31,8 +35,12 @@
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_metal.xml" value="0.1" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_mix.xml" value="0.1205" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_mixeTdk.xml" value="0.2595" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_organik.xml" value="0.146" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_plastik.xml" value="0.1" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_sampah.xml" value="0.1205" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_sampahOrganik.xml" value="0.1605" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_sampahorganik.xml" value="0.146" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_trashcon.xml" value="0.1605" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_ya.xml" value="0.2595" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_zoom.xml" value="0.2595" />
       </map>

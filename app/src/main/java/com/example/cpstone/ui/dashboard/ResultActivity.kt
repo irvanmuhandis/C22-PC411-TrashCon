@@ -1,8 +1,9 @@
 package com.example.cpstone.ui.dashboard
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.net.toUri
 import com.example.cpstone.R
 import com.example.cpstone.databinding.ActivityResultBinding
 
@@ -14,21 +15,27 @@ class ResultActivity : AppCompatActivity() {
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val result = intent.getIntExtra("result",0)
-        Toast.makeText(this,result.toString(),Toast.LENGTH_SHORT).show()
-        setview(binding,result!!)
+        val result = intent.getIntExtra("result", 0)
+
+        val photo = intent.getStringExtra("photo")
+        setview(binding, result!!, photo!!)
+
+
     }
 
-    private fun setview(binding: ActivityResultBinding,index:Int) {
+
+    private fun setview(binding: ActivityResultBinding, index: Int, image: String) {
         var Class = resources.getStringArray(R.array.result)
         val desc = resources.getStringArray(R.array.data_desc)
-        val photo = resources.obtainTypedArray(R.array.data_photo)
         val process = resources.getStringArray(R.array.data_process)
+
+
 
         binding.classTrash.text = Class[index]
         binding.description.text = desc[index]
         binding.process.text = process[index]
-        binding.ivTrashClassDetail.setImageResource(photo.getResourceId(index,-1))
-
+        binding.ivTrashClassDetail.setImageURI(image.toUri())
     }
+
+
 }

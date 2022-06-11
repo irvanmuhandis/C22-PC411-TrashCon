@@ -95,11 +95,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun trashClassClicked(data: TrashClass) {
-        Toast.makeText(
-            requireContext(),
-            "${data.name} from one column adapter was clicked",
-            Toast.LENGTH_SHORT
-        ).show()
+
         val intent = Intent(requireContext(),DetailClassTrashActivity::class.java)
         intent.putExtra("item",data)
         startActivity(intent)
@@ -107,8 +103,7 @@ class HomeFragment : Fragment() {
 
 
     private fun headerClicked(name: String) {
-        Toast.makeText(requireContext(), "$name from two column was clicked", Toast.LENGTH_SHORT)
-            .show()
+
         val intent = Intent(requireContext(),HeaderTrashActivity::class.java)
         startActivity(intent)
     }

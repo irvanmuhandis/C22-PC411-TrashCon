@@ -10,4 +10,6 @@
     <color name="white_trash">#d1fae2</color>
     <color name="green">#19d367</color>
     <color name="colorAccent">#4CAF50</color>
+    <color name="darkwood">#4A3828</color>
+    <color name="verydarkwood">#382A1E</color>
 </resources>
