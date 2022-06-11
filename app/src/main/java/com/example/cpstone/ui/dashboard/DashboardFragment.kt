@@ -148,7 +148,11 @@ class DashboardFragment : Fragment() {
                     databaseReference?.child(id!!)?.setValue(imageModel)
                     loading(false)
                 }.addOnFailureListener {
+<<<<<<< HEAD
                     Toast.makeText(requireContext(), "GAGAAAAL", Toast.LENGTH_SHORT).show()
+=======
+                    Toast.makeText(requireContext(),"GAGAL UPLOAD DATA",Toast.LENGTH_SHORT).show()
+>>>>>>> 3740e24c51f0982ff9da6847b03535399ec68163
                 }
 
             }.addOnProgressListener {
@@ -223,21 +227,21 @@ class DashboardFragment : Fragment() {
         if (getFile != null) {
             val file = reduceFileImage(getFile as File)
             val bitmap: Bitmap = BitmapFactory.decodeFile(file.path)
-            val image = Bitmap.createScaledBitmap(bitmap, 160, 160, false)
+            val image = Bitmap.createScaledBitmap(bitmap, 150, 150, false)
             val model = Model.newInstance(requireContext())
 
 // Creates inputs for reference.
             val inputFeature0 =
-                TensorBuffer.createFixedSize(intArrayOf(1, 160, 160, 3), DataType.FLOAT32)
-            val byteBuffer: ByteBuffer = ByteBuffer.allocateDirect(4 * 160 * 160 * 3)
+                TensorBuffer.createFixedSize(intArrayOf(1, 150, 150, 3), DataType.FLOAT32)
+            val byteBuffer: ByteBuffer = ByteBuffer.allocateDirect(4 * 150 * 150 * 3)
             byteBuffer.order(ByteOrder.nativeOrder())
 
-            var intValue = IntArray(160 * 160)
+            var intValue = IntArray(150 * 150)
             image.getPixels(intValue, 0, image.width, 0, 0, image.width, image.height)
             var pixel = 0
 
-            for (i in 1..160) {
-                for (j in 1..160) {
+            for (i in 1..150) {
+                for (j in 1..150) {
                     val value = intValue[pixel++]
                     byteBuffer.putFloat(((value shr 16) and 0xFF) * (1f / 1))
                     byteBuffer.putFloat(((value shr 8) and 0xFF) * (1f / 1))

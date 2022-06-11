@@ -13,7 +13,7 @@
                 android:angle="270"
                 android:centerColor="#00FF0000"
                 android:centerX="0.9"
-                android:endColor="#99000000"
+                android:endColor="#99191818"
                 android:startColor="#00FF0000" />
 
             <corners android:radius="8dp" />
@@ -27,7 +27,7 @@
                 android:centerColor="#00FF0000"
                 android:centerY="0.9"
                 android:endColor="#00FF0000"
-                android:startColor="#99000000"
+                android:startColor="#992E2C2C"
                 android:type="linear" />
 
             <corners android:radius="8dp" />
@@ -41,7 +41,7 @@
                 android:centerColor="#00FF0000"
                 android:centerY="0.9"
                 android:endColor="#00FF0000"
-                android:startColor="#99000000"
+                android:startColor="#99201F1F"
                 android:type="linear" />
 
             <corners android:radius="8dp" />

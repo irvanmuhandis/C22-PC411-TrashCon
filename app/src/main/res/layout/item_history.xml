@@ -48,17 +48,30 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
-                    android:gravity="center"
+                    android:fontFamily="@font/baloo_paaji"
+                    android:gravity="bottom|center"
                     android:text="TextView"
-                    android:textSize="34sp" />
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/baloo_paaji"
+                    android:gravity="bottom|center"
+                    android:text="Di Identifikasi pada :" />
 
                 <TextView
                     android:id="@+id/tv_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:gravity="center"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textColor="@color/colorAccent" />
 
             </LinearLayout>
 

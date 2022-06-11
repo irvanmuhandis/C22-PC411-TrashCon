@@ -18,7 +18,6 @@ class ResultActivity : AppCompatActivity() {
         val result = intent.getIntExtra("result", 0)
 
         val photo = intent.getStringExtra("photo")
-        Toast.makeText(this, result.toString(), Toast.LENGTH_SHORT).show()
         setview(binding, result!!, photo!!)
 
 
