@@ -10,30 +10,33 @@
     <string name="hasil_gambar">hasil gambar</string>
 
     <string-array name="result">
-        <item>Cardboard</item>
-        <item>Glass</item>
-        <item>Metal</item>
-        <item>Paper</item>
-        <item>Plastic</item>
-        <item>Trash</item>
+        <item>Sampah Kardus</item>
+        <item>Sampah Kaca</item>
+        <item>Sampah Metal</item>
+        <item>Sampah Kertas</item>
+        <item>Sampah Plastik</item>
+        <item>Sampah Organik</item>
     </string-array>
 
     <string-array name="data_desc">
-        <item>Kardus adalah suatu barang yang biasa digunakan sebagai pelindung atau bahan untuk melindungi produk yang dibiasa mengemas suatu barang selama distribusi dari produsen hingga sampai pada konsumen. Kardus terbuat dari bahan dasar yaitu kertas yang mudah sekali rusak.</item>
-        <item>Sampah atau limbah kaca tergolong sampah yang berbahaya bila dibuang di sembarang tempat, karena dikhawatirkan terinjak atau melukai anggota tubuh lainnya. Sampah kaca juga sangat sulit terurai di dalam tanah, dan diperlukan waktu ratusan tahun untuk dapat terurai.</item>
+        <item>Kardus terbuat dari pulp (bubur kertas), ada yang organik terbuat dari kayu, atau sintetis. Sampah kardus diperkirakan kian meningkat sehubungan dengan tinggi nya kegiatan belanja online. Kardus terbagi menjadi dua jenis yaitu kardus bergelombang dan kardus karton yang terdiri dari satu lapis.</item>
+        <item> Kaca berasal dari bahan yang bersifat cair namun memiliki kepadatan tinggi. Sampah kaca membutuhkan waktu untuk hancur lebih lama dari pada sampah plastik yakni sekitar 1 juta tahun, sedangkan plastik hanya 600 tahun.</item>
         <item>Sampah kaleng adalah sampah yang terbuat dari baja tersalut timah. Sampah ini tidak bisa terurai secara alami karena bahan pembuatnya sendiri memang sulit diurai alami. </item>
         <item>Sampah kertas adalah kertas yang sudah tidak terpakai lagi dan dibuang ketika sudah tidak terpakai lagi. Kertas terbuat dari bahan dasar pohon. Sampah kertas juga terdiri dari berbagai jenis diantaranya, kertas tulis, majalah, koran, karton atau pun pembungkus makanan.</item>
-        <item>Sampah plastik adalah semua barang bekas atau tidak terpakai yang materialnya diproduksi dari bahan kimia tak terbarukan. Sebagian besar sampah plastik yang digunakan sehari-hari biasanya dipakai untuk pengemasan. </item>
-        <item>Belum tau</item>
+        <item>Plastik terbentuk dari kondensasi organik atau penambahan polimer dan bisa juga terdiri dari zat lain untuk meningkatkan kualitas plastik. Setiap tahun memperlihatkan peningkatan jumlah ditambah sampah plastik bersifat anorganik dan sulit untuk terurai. Sampah plastik dapat merusak rantai makanan, merusak ekosistem hewan, dan pencemaran tanah dan air. </item>
+        <item>Sampah Organik adalah barang yang sudah tidak terpakai dan dibuang oleh pemilik atau pemakai sebelumnya. Sampah organik masih bisa dipakai jika dikelola dengan prosedur yang benar. Sampah organik dapat mengalami pelapukan (dekomposisi) dan terurai menjadi bahan yang lebih kecil dan tidak berbau (sering disebut dengan kompos). Kompos merupakan hasil pelapukan bahan-bahan organik seperti dedaunan, jerami, alang-alang, sampah, rumput, dan bahan lain yang sejenis. Proses pelapukannya sampah organik dapat dipercepat oleh bantuan manusia. Sebesar 95 persen sampah organik dapat dihasilkan dari pasar khusus seperti pasar sayur mayur, pasar buah, atau pasar ikan. Selain dari pasar khusus, 75 persen sampah organik berasal dari daerah pemukiman masyarakat.</item>
     </string-array>
 
     <string-array name="data_process">
-        <item>Kardus adalah suatu barang yang biasa digunakan sebagai pelindung atau bahan untuk melindungi produk yang dibiasa mengemas suatu barang selama distribusi dari produsen hingga sampai pada konsumen. Kardus terbuat dari bahan dasar yaitu kertas yang mudah sekali rusak.</item>
-        <item>Sampah atau limbah kaca tergolong sampah yang berbahaya bila dibuang di sembarang tempat, karena dikhawatirkan terinjak atau melukai anggota tubuh lainnya. Sampah kaca juga sangat sulit terurai di dalam tanah, dan diperlukan waktu ratusan tahun untuk dapat terurai.</item>
+        <item>Sampah kardus yang masih layak dapat dimanfaatkan untuk tempat penyimpanan, diberikan ke pemulung, atau dapat didaur ulang layaknya sampah kertas. Proses daur ulang ini mengubah sampah kardus menjadi bubur kertas untuk diolah menjadi produk kardus. Sedangkan untuk kardus yang sudah tidak layak (basah, berminyak) dapat digunakan sebagai bahan membuat kompos.</item>
+        <item>Pengolahan sampah kaca dapat dilakukan dengan cara didaur ulang. Produk kaca setelah proses daur ulang dapat dimanfaatkan menjadi bahan glassphalt sebagai pelapis jalan atau bahan dasar pembuatan kerajinan. Bahan dasar pembuatan kerajinan memanfaatkan pecahan-pecahan sampah kaca. Sebelum dilakukan proses daur ulang sampah kaca harus dibersihkan dari bahan kontaminan.</item>
         <item>Sampah kaleng adalah sampah yang terbuat dari baja tersalut timah. Sampah ini tidak bisa terurai secara alami karena bahan pembuatnya sendiri memang sulit diurai alami. </item>
         <item>Kebutuhan manusia yang berlebih terhadap kertas mengakibatkan bertambahnya produksi sampah kertas di lingkungan sekitar. Untuk memenuhi hal tersebut,ribuan pohon ditebang setiap tahunnya sehingga mengakibatkan rusaknya hutan. Meskipun terbuat dari bahan organik, namun masih sering ditemukan tumpukan sampah yang terdiri dari kertas. Salah satu solusi nya adalah lakukan pendauran ulang terhadap sampah kertas. Proses ini dapat mengubah sampah kertas menjadi produk kertas yang dapat digunakan kembali.</item>
-        <item>Sampah plastik adalah semua barang bekas atau tidak terpakai yang materialnya diproduksi dari bahan kimia tak terbarukan. Sebagian besar sampah plastik yang digunakan sehari-hari biasanya dipakai untuk pengemasan. </item>
-        <item>Belum tau</item>
+        <item>Sampah plastik dibedakan berdasarkan jenis nya sebelum dilakukan pengolahan seperti botol kemasan, plastik, bungkus makanan dan lainnya, selanjutnya bersihkan sampah tersebut. Plastik yang dapat didaur ulang biasanya akan diproses menjadi biji plastik yang nantinya akan digunakan untuk bahan baku pembuatan produk plastik lainnya. </item>
+        <item>Cara mengelola sampah organik relatif mudah karena dapat terurai secara hayati. Selain dibuang melalui tempat pembuangan akhir (TPA) atau didaur ulang, sampah organik juga dapat dibakar. Namun, cara pembakaran tidak disarankan karena dapat menghasilkan asap beracun.\nCara terbaik untuk mengelola sampah organik adalah dengan mendaur ulang, seperti:\n\n
+- Sisa makanan dapat digunakan sebagai makanan hewan.\n
+- Sampah organik dapat diolah menjadi pupuk kompos.\n
+- Sampah organik juga dapat dikelola untuk produksi biogas.</item>
     </string-array>
 
     <string-array name="header_text">
@@ -52,7 +55,7 @@
         <item>@mipmap/ic_metal</item>
         <item>@mipmap/ic_kertas</item>
         <item>@mipmap/ic_plastik</item>
-        <item>@mipmap/ic_sampah</item>
+        <item>@mipmap/ic_organik</item>
     </integer-array>
 
     <string-array name="tutorial_text">
@@ -79,6 +82,7 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="quote">\"Orang-orang yang beradab dan berilmu adalah\nmereka yang menjaga lingkungan supaya tetap bersih\ndan enak untuk ditinggali.\"</string>
 
 
 </resources>

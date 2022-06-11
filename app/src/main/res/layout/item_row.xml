@@ -34,6 +34,7 @@
                 android:id="@+id/judul_tutor"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:fontFamily="sans-serif-smallcaps"
                 android:gravity="bottom"
                 android:padding="10dp"
                 android:shadowColor="#191616"

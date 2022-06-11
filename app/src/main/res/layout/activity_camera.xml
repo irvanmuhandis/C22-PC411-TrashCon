@@ -42,7 +42,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="sans-serif-black"
+            android:fontFamily="@font/baloo_paaji"
             android:gravity="center"
             android:text="@string/camera_x"
             android:textStyle="bold" />
