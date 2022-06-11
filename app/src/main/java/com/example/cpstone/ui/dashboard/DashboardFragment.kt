@@ -27,11 +27,10 @@ import com.example.cpstone.helper.rotateBitmap
 import com.example.cpstone.helper.uriToFile
 import com.example.cpstone.ml.Model
 import com.example.cpstone.ui.camera.CameraActivity
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ServerValue
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
@@ -48,11 +47,11 @@ class DashboardFragment : Fragment() {
 
     private val binding get() = _binding!!
     private lateinit var dashboardViewModel: DashboardViewModel
-    private var auth: FirebaseUser = Firebase.auth.currentUser!!
+
     private var firebaseStore: FirebaseStorage? = null
     private var storageReference: StorageReference? = FirebaseStorage.getInstance().reference
     private var databaseReference: DatabaseReference? =
-        FirebaseDatabase.getInstance().reference.child("myImages").child(auth.uid)
+        FirebaseDatabase.getInstance().reference.child("myImages").child(Firebase.auth.uid.toString())
 
     companion object {
         const val TAG = "MainsActivity"
@@ -133,26 +132,20 @@ class DashboardFragment : Fragment() {
 
     }
 
-    private fun upload(result: String, index: Int) {
+    private fun upload(result: String,index : Int) {
         if (getFile != null) {
             val file = reduceFileImage(getFile as File)
             val ref = storageReference?.child("myImages/" + UUID.randomUUID().toString())
 
-
             ref?.putFile(file?.toUri()!!)!!.addOnSuccessListener {
                 ref.downloadUrl.addOnSuccessListener {
                     val id = databaseReference!!.push()!!.key
-                    val imageModel =
-                        ImageUpload(it.toString(), index, System.currentTimeMillis(), result)
+                    val imageModel = ImageUpload(it.toString(),index ,System.currentTimeMillis(), result)
 
                     databaseReference?.child(id!!)?.setValue(imageModel)
                     loading(false)
                 }.addOnFailureListener {
-<<<<<<< HEAD
-                    Toast.makeText(requireContext(), "GAGAAAAL", Toast.LENGTH_SHORT).show()
-=======
                     Toast.makeText(requireContext(),"GAGAL UPLOAD DATA",Toast.LENGTH_SHORT).show()
->>>>>>> 3740e24c51f0982ff9da6847b03535399ec68163
                 }
 
             }.addOnProgressListener {
@@ -266,11 +259,11 @@ class DashboardFragment : Fragment() {
             }
             var resultPrediction = resources.getStringArray(R.array.result)
 
-            upload(resultPrediction[maxPos], maxPos)
+            upload(resultPrediction[maxPos],maxPos)
 
             val intent = Intent(requireContext(), ResultActivity::class.java)
             intent.putExtra("result", maxPos)
-            intent.putExtra("photo", file.toUri().toString())
+            intent.putExtra("photo",file.toUri().toString())
             startActivity(intent)
 
 // Releases model resources if no longer used.
