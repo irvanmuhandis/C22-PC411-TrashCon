@@ -1,10 +1,3 @@
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-
-
 <br />
 <div align="center">
 
@@ -86,6 +79,7 @@ This is how to setting up Trashcon project locally.
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
+3. Finish
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -93,53 +87,50 @@ This is how to setting up Trashcon project locally.
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+* Smart Sort trash with trained tensorflow model
+![WhatsApp Image 2022-06-13 at 10 58 27](https://user-images.githubusercontent.com/76271987/173277055-06a8e8bb-f13b-4fe2-aeec-c8d6176388a7.jpeg)
+With our app you can sort trash instantly by taking picture or selecting image in gallery !!
+Also our model have high accuracy of 0.83 or in other word 83 percents !! And will keep increasing in the future !!
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+* Tell more about the trash
+![WhatsApp Image 2022-06-12 at 23 20 11](https://user-images.githubusercontent.com/76271987/173277116-0d8c5718-576d-4368-a831-00120badf083.jpeg)
+Our app can know about the trash and how to process it so the trash will be useful and will not become pollution.
+
+*  Recorded capture 
+![WhatsApp Image 2022-06-12 at 01 51 49](https://user-images.githubusercontent.com/76271987/173277207-722ca69f-aa22-4aee-a3f1-b2653493a32c.jpeg)
+All past capture of trash by user is automaticly saved when the user using our smart sort. So worry not about forgeting the result of your yesterday work, it all stored and can be seen by user.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+
+## Tutorial and Tips
+
+# Using Trashcon
+To sort/identify the trash all you have to do is take picture of trash or selecting image from gallery , then click the 'Upload' button Trashcon and Trashcon will show you the result 
+
+# Tips when taking a picture
+1. Focusing the trash in the middle of frame , avoid blurred image
+![blur](https://user-images.githubusercontent.com/76271987/173278811-e74f7900-ab67-4969-b4e5-fe6622490902.png)
+![ya](https://user-images.githubusercontent.com/76271987/173278928-3da08d5d-2789-4334-9546-938ce15b3975.png)
+
+3. Avoid zooming too much / too close with the object, make sure the thrash is clear
+![zoom](https://user-images.githubusercontent.com/76271987/173278832-ef8ccc97-2a94-442f-8260-51a606cc43da.png)
+![ya](https://user-images.githubusercontent.com/76271987/173278928-3da08d5d-2789-4334-9546-938ce15b3975.png)
+
+
+4. Only input one type of trash at a time
+![mixed](https://user-images.githubusercontent.com/76271987/173278824-113d69a5-4d65-454a-a663-d1f9f1589022.png)
+![ya](https://user-images.githubusercontent.com/76271987/173278928-3da08d5d-2789-4334-9546-938ce15b3975.png)
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+- [x] Building Application
+- [x] Integrate app with tensorflow lite model
+- [x] Integrate app with firebase
+- [x] Testing and feedback
+- [x] Appication deployment
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -148,7 +139,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+M.Irvam Muhandis - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
@@ -156,36 +147,4 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
