@@ -29,6 +29,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#tutorial-and-tips">Turorial and Tips</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -85,15 +86,18 @@ This is how to setting up Trashcon project locally.
 ## Usage
 
 * Smart Sort trash with trained tensorflow model
+
 ![WhatsApp Image 2022-06-13 at 10 58 27](https://user-images.githubusercontent.com/76271987/173277055-06a8e8bb-f13b-4fe2-aeec-c8d6176388a7.jpeg)
 With our app you can sort trash instantly by taking picture or selecting image in gallery !!
 Also our model have high accuracy of 0.83 or in other word 83 percents !! And will keep increasing in the future !!
 
 * Tell more about the trash
+
 ![WhatsApp Image 2022-06-12 at 23 20 11](https://user-images.githubusercontent.com/76271987/173277116-0d8c5718-576d-4368-a831-00120badf083.jpeg)
 Our app can know about the trash and how to process it so the trash will be useful and will not become pollution.
 
 *  Recorded capture 
+
 ![WhatsApp Image 2022-06-12 at 01 51 49](https://user-images.githubusercontent.com/76271987/173277207-722ca69f-aa22-4aee-a3f1-b2653493a32c.jpeg)
 All past capture of trash by user is automaticly saved when the user using our smart sort. So worry not about forgeting the result of your yesterday work, it all stored and can be seen by user.
 
@@ -102,10 +106,10 @@ All past capture of trash by user is automaticly saved when the user using our s
 
 ## Tutorial and Tips
 
-# Using Trashcon
+### Using Trashcon
 To sort/identify the trash all you have to do is take picture of trash or selecting image from gallery , then click the 'Upload' button Trashcon and Trashcon will show you the result 
 
-# Tips when taking a picture
+### Tips when taking a picture
 1. Focusing the trash in the middle of frame , avoid blurred image
 ![blur](https://user-images.githubusercontent.com/76271987/173278811-e74f7900-ab67-4969-b4e5-fe6622490902.png)
 ![ya](https://user-images.githubusercontent.com/76271987/173278928-3da08d5d-2789-4334-9546-938ce15b3975.png)
@@ -136,9 +140,9 @@ To sort/identify the trash all you have to do is take picture of trash or select
 <!-- CONTACT -->
 ## Contact
 
-M.Irvam Muhandis - [@your_twitter](https://twitter.com/your_username) - email@example.com
+M.Irvan Muhandis - irvanmuhandis@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/irvanmuhandis/C22-PC411-TrashCon]([https://github.com/your_username/repo_name](https://github.com/irvanmuhandis/C22-PC411-TrashCon))
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
