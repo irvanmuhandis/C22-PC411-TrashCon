@@ -88,17 +88,20 @@ This is how to setting up Trashcon project locally.
 * Smart Sort trash with trained tensorflow model
 
 ![WhatsApp Image 2022-06-13 at 10 58 27](https://user-images.githubusercontent.com/76271987/173277055-06a8e8bb-f13b-4fe2-aeec-c8d6176388a7.jpeg)
+
 With our app you can sort trash instantly by taking picture or selecting image in gallery !!
 Also our model have high accuracy of 0.83 or in other word 83 percents !! And will keep increasing in the future !!
 
 * Tell more about the trash
 
 ![WhatsApp Image 2022-06-12 at 23 20 11](https://user-images.githubusercontent.com/76271987/173277116-0d8c5718-576d-4368-a831-00120badf083.jpeg)
+
 Our app can know about the trash and how to process it so the trash will be useful and will not become pollution.
 
 *  Recorded capture 
 
 ![WhatsApp Image 2022-06-12 at 01 51 49](https://user-images.githubusercontent.com/76271987/173277207-722ca69f-aa22-4aee-a3f1-b2653493a32c.jpeg)
+
 All past capture of trash by user is automaticly saved when the user using our smart sort. So worry not about forgeting the result of your yesterday work, it all stored and can be seen by user.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
