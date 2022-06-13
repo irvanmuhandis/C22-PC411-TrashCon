@@ -7,7 +7,7 @@
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/drawable/gradient.xml" value="0.2105" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/drawable/ic_baseline_person_4_24.xml" value="0.2105" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2105" />
-        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.536" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout-w936dp/activity_login.xml" value="0.264" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_camera.xml" value="0.11302083333333333" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/activity_detail_class_trash.xml" value="0.23854166666666668" />
@@ -25,9 +25,14 @@
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/item_history.xml" value="0.264" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/layout/item_row.xml" value="0.4" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/menu/bottom_nav_menu.xml" value="0.11302083333333333" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_b1g.xml" value="0.1605" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_bg1.xml" value="0.1605" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_bg2.xml" value="0.1605" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_blur.xml" value="0.1205" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_blurTdk.xml" value="0.2595" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_blurtdk.xml" value="0.1205" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_buang sampah.xml" value="0.1605" />
+        <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_buangSampah.xml" value="0.1605" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_hpsampah.xml" value="0.176" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_kaca.xml" value="0.1" />
         <entry key="..\:/MAGANG/coding/LatihanBangkit/Cpstone/app/src/main/res/mipmap-anydpi-v26/ic_kardus.xml" value="0.1" />

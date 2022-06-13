@@ -1,8 +1,7 @@
 package com.example.cpstone.ui.history
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.example.cpstone.R
@@ -11,16 +10,18 @@ import com.example.cpstone.databinding.ActivityDetailHistoryBinding
 
 class DetailHistoryActivity : AppCompatActivity() {
 
-    lateinit var binding : ActivityDetailHistoryBinding
+    lateinit var binding: ActivityDetailHistoryBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailHistoryBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         val result = intent.getParcelableExtra<ImageUpload>("resultHistory")
         setview2(binding, result!!)
     }
+
     private fun setview2(binding: ActivityDetailHistoryBinding, packet: ImageUpload) {
         var Class = resources.getStringArray(R.array.result)
         val desc = resources.getStringArray(R.array.data_desc)
